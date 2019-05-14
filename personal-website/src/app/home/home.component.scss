@@ -23,3 +23,33 @@
         }
     }
 }
+
+.developer {
+    background-color: $dull-red;
+    padding: 40px 100px;
+
+    .main {
+        font-size: 64px;
+        font-family: $arizonia;
+        color: white;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .description {
+        margin: 0 100px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 240px;
+            border-radius: 150px;
+        }
+
+        span {
+            font-size: 18px;
+            margin-left: 40px;
+            color: white;
+        }
+    }
+}
