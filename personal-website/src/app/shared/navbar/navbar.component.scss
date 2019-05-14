@@ -1,0 +1,41 @@
+
+@import '../../../vars';
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: flex-start;
+    background-color: $grey;
+
+    img {
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+        padding-left: 30px;
+    }
+
+    .content {
+        width: wrap;
+
+        button {
+            -moz-transition-duration: .2s;
+            transition-duration: .2s;
+            height: 90px;
+            width: 150px;
+            font-size: 18px;
+            background-color: $grey;
+            border: none;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                -moz-transition-duration: .4s;
+                transition-duration: .4s;
+                background-color: $black;
+            }
+        }
+    }
+}
