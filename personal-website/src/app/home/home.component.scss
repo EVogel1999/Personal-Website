@@ -68,3 +68,18 @@
     display: flex;
     align-items: center;
 }
+
+.resume {
+    text-align: center;
+
+    button {
+        background-color: $berry-red;
+        border: 2px solid $berry-red;
+        color: white;
+        cursor: pointer;
+        padding: 20px;
+        width: 150px;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+}
