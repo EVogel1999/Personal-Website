@@ -1,0 +1,25 @@
+
+@import '../../vars';
+
+.hello {
+    height: calc(100vh - 290px);
+    font-family: $arizonia;
+    color: white;
+    margin: 100px;
+
+    .sub {
+        font-size: 96px;
+        display: block;
+    }
+
+    div {
+        text-align: center;
+
+        .main {
+            font-size: 288px;
+            color: $vibrant-red;
+            margin: 0 auto;
+            display: inline-block;
+        }
+    }
+}
