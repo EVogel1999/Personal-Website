@@ -2,12 +2,7 @@
 @import '../../../vars';
 
 nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
-    align-items: flex-start;
+    text-align: right;
     background-color: $grey;
 
     img {
