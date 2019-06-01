@@ -133,6 +133,12 @@
     }
 }
 
+@media (max-width: 460px) {
+    .hello {
+        height: calc(100vh - 180px);
+    }
+}
+
 @media (max-width: 425px) {
 
     .resume {
@@ -150,7 +156,6 @@
     }
 
     .hello {
-        height: calc(100vh - 110px);
         padding: 10px;
 
         .sub {
