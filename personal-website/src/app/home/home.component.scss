@@ -22,6 +22,30 @@
         margin: 0 auto;
         display: block;
     }
+
+    &:before {
+        content: '';
+        z-index: -1;
+        background: $vibrant-red;
+        opacity: .15;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        mask: url($cube-svg) repeat;
+    }
+
+    &:after {
+        content: '';
+        background: linear-gradient(90deg,$black,rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), $black);
+        position: absolute;
+        top: 90px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
 }
 
 .developer {
@@ -73,6 +97,8 @@
     text-align: center;
 
     button {
+        -moz-transition-duration: .2s;
+        transition-duration: .2s;
         background-color: $berry-red;
         border: 2px solid $berry-red;
         color: white;
@@ -81,6 +107,13 @@
         width: 150px;
         font-size: 18px;
         margin: 20px 0;
+
+        &:hover {
+            -moz-transition-duration: .4s;
+            transition-duration: .4s;
+            background-color: $vibrant-red;
+            border-color: $vibrant-red;
+        }
     }
 }
 
@@ -150,6 +183,7 @@
     }
 
     .hello {
+        height: calc(100vh - 110px);
         padding: 10px;
 
         .sub {
