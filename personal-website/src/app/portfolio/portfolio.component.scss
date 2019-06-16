@@ -1,0 +1,73 @@
+@import '../../vars';
+
+.blurb {
+    margin: 60px 150px;
+    color: white;
+
+    .text {
+        display: block;
+        font-family: $arizonia;
+        font-size: 72px;
+    }
+
+    .subtext {
+        display: block;
+        margin: 30px 50px;
+        font-family: $oxygen;
+        font-size: 20px;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    .filter {
+        background-color: $dull-red;
+        margin: 0 60px 60px 60px;
+        color: white;
+        text-align: center;
+
+        .title {
+            display: block;
+            font-family: $arizonia;
+            font-size: 48px;
+            padding: 10px 10px 5px 10px;
+        }
+
+        .clear {
+            display: block;
+            font-family: $oxygen;
+            font-size: 12px;
+            padding: 10px 5px 10px 10px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        button {
+            -moz-transition-duration: .2s;
+            transition-duration: .2s;
+            display: block;
+            padding: 10px;
+            width: 300px;
+            height: 50px;
+            background-color: $dull-red;
+            border: none;
+            color: white;
+            font-family: $oxygen;
+            font-size: 14px;
+            cursor: pointer;
+
+            &:hover {
+                -moz-transition-duration: .4s;
+                transition-duration: .4s;
+                background-color: $vibrant-red;
+            }
+
+            &.selected {
+                background-color: $vibrant-red;
+            }
+        }
+    }
+}

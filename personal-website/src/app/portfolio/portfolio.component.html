@@ -1,3 +1,19 @@
-<p>
-  portfolio works!
-</p>
+<main>
+  <section class="blurb">
+    <span class="text">My Developer Portfolio</span>
+    <span class="subtext">
+      From basic HTML to MongoDB and everything in between. This shows off projects I have completed on a professional level, 
+      passion projects, and University related course work.
+    </span>
+  </section>
+  <section class="projects">
+    <div class="filter">
+      <span class="title">Filter</span>
+      <span class="clear">Clear Filters</span>
+      <button *ngFor="let option of filters">{{ option }}</button>
+    </div>
+    <div class="results">
+      
+    </div>
+  </section>
+</main>
