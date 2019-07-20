@@ -1,5 +1,9 @@
 @import '../../vars';
 
+main {
+    margin-bottom: 50px;
+}
+
 .blurb {
     margin: 60px 150px;
     color: white;
@@ -21,13 +25,17 @@
 .projects {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 0 100px;
 
     .filter {
         background-color: $dull-red;
         margin: 0 60px 60px 60px;
         color: white;
         text-align: center;
+        height: wrap;
 
         .title {
             display: block;
@@ -69,5 +77,13 @@
                 background-color: $vibrant-red;
             }
         }
+    }
+
+    .results {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: auto;
+        width: 100%;
     }
 }

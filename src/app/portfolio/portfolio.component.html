@@ -2,8 +2,8 @@
   <section class="blurb">
     <span class="text">My Developer Portfolio</span>
     <span class="subtext">
-      From basic HTML to MongoDB and everything in between. This shows off projects I have completed on a professional level, 
-      passion projects, and University related course work.
+      From basic HTML to MongoDB and everything in between. This shows off projects I have completed professionally, 
+      personally, and just to learn something new.
     </span>
   </section>
   <section class="projects">
@@ -13,7 +13,7 @@
       <button *ngFor="let option of filters">{{ option }}</button>
     </div>
     <div class="results">
-      
+      <app-card *ngFor="let project of projects" [project]="project"></app-card>
     </div>
   </section>
 </main>

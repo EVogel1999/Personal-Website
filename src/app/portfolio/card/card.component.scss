@@ -1,0 +1,29 @@
+
+@import '../../../vars';
+
+.card {
+    -moz-transition-duration: .2s;
+    transition-duration: .2s;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border: 2px solid $berry-red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+
+    img {
+        width: 80%;
+        min-width: 150px;
+        max-width: 200px;
+    }
+
+    &:hover {
+        -moz-transition-duration: .4s;
+        transition-duration: .4s;
+        border-color: $dull-red;
+        cursor: pointer;
+    }
+}
