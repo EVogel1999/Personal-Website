@@ -68,8 +68,9 @@
 .quality {
     padding: 40px 100px;
 
-    img {
-        width: 200px;
+    .material-icons {
+        color: white;
+        font-size: 150px;
     }
 
     .text {
@@ -147,8 +148,8 @@
     .quality {
         padding: 20px 50px;
 
-        img {
-            width: 150px;
+        .material-icons {
+            font-size: 100px;
         }
 
         .text {
@@ -217,7 +218,7 @@
     .quality {
         padding: 20px;
 
-        img {
+        .material-icons {
             display: none;
         }
 
