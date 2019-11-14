@@ -31,6 +31,10 @@ nav {
                 transition-duration: .4s;
                 background-color: $black;
             }
+
+            &.active {
+                background-color: $black;
+            }
         }
     }
 }
