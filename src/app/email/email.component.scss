@@ -1,0 +1,120 @@
+@import '../../vars';
+
+main {
+    margin-bottom: 50px;
+}
+
+.blurb {
+    margin: 60px 150px 100px 150px;
+    color: white;
+
+    .text {
+        display: block;
+        font-family: $arizonia;
+        font-size: 72px;
+    }
+
+    .subtext {
+        display: block;
+        margin: 30px 50px;
+        font-family: $oxygen;
+        font-size: 20px;
+    }
+}
+
+.contact {
+    padding: 50px;
+    background-color: $dull-red;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+
+    .material-icons {
+        font-size: 200px;
+        margin: 0 20px;
+    }
+
+    .text {
+        font-size: 24px;
+        
+        a {
+            color: white;
+
+            &:link {
+                color: white;
+            }
+
+            &:visited {
+                color: white;
+            }
+
+            &:active {
+                color: white;
+            }
+        }
+    }
+}
+
+.resume {
+    text-align: center;
+    margin-top: 50px;
+
+    button {
+        -moz-transition-duration: .2s;
+        transition-duration: .2s;
+        background-color: $berry-red;
+        border: 2px solid $berry-red;
+        color: white;
+        cursor: pointer;
+        padding: 20px;
+        width: 150px;
+        font-size: 18px;
+        margin: 20px 0;
+
+        &:hover {
+            -moz-transition-duration: .4s;
+            transition-duration: .4s;
+            background-color: $vibrant-red;
+            border-color: $vibrant-red;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .blurb {
+        margin: 60px 70px 100px 70px;
+    }
+
+    .contact {
+        .material-icons {
+            font-size: 150px;
+        }
+
+        .text {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .blurb {
+        margin: 60px 50px 100px 50px;
+
+        .text {
+            font-size: 50px;
+        }
+
+        .subtext {
+            margin: 30px 0 30px 30px;
+        }
+    }
+
+    .contact {
+        .material-icons {
+            display: none;
+        }
+    }
+}
