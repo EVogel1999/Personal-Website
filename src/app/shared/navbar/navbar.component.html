@@ -3,6 +3,6 @@
   <div class="content">
     <button routerLink="/home" [ngClass]="{'active': navbarService.current === 0}">Home</button>
     <button routerLink="/portfolio" [ngClass]="{'active': navbarService.current === 1}">Portfolio</button>
-    <button [ngClass]="{'active': navbarService.current === 2}">Contact</button>
+    <button routerLink="/email" [ngClass]="{'active': navbarService.current === 2}">Contact</button>
   </div>
 </nav>

@@ -9,6 +9,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CardComponent } from './portfolio/card/card.component';
+import { EmailComponent } from './email/email.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardComponent } from './portfolio/card/card.component';
     NavbarComponent,
     HomeComponent,
     PortfolioComponent,
-    CardComponent
+    CardComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,
