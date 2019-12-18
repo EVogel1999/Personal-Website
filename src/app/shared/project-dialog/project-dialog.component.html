@@ -1,1 +1,16 @@
-<p>project-dialog works!</p>
+
+<div class="wrapper">
+    <div class="header">
+        <img src="{{ project.image }}" alt="{{ project.name }}">
+        <div>
+            <span *ngIf="project.repository" class="name"><a href="{{ project.repository }}" target="blank">{{ project.name }}</a></span>
+            <span *ngIf="!project.repository" class="name">{{ project.name }}</span>
+            
+            <span>{{ project.start | date: 'MMMM yyyy' }} - {{ (project.end | date: 'MMMM yyyy') || 'Present' }}</span>
+        </div>
+    </div>
+    <div class="body">
+        <span class="description">{{ project.description }}</span>
+        <span class="tags"><span *ngFor="let tag of project.tags" class="tag">{{ tag }}</span></span>
+    </div>
+</div>

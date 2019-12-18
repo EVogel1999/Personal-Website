@@ -5,7 +5,7 @@ import { Project } from 'src/app/interfaces/project';
 @Component({
   selector: 'app-project-dialog',
   templateUrl: './project-dialog.component.html',
-  styleUrls: ['./project-dialog.component.sass']
+  styleUrls: ['./project-dialog.component.scss']
 })
 export class ProjectDialogComponent implements OnInit {
 
