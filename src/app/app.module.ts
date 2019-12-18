@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CardComponent } from './portfolio/card/card.component';
 import { EmailComponent } from './email/email.component';
+import { ProjectDialogComponent } from './shared/project-dialog/project-dialog.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EmailComponent } from './email/email.component';
     HomeComponent,
     PortfolioComponent,
     CardComponent,
-    EmailComponent
+    EmailComponent,
+    ProjectDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,9 @@ import { EmailComponent } from './email/email.component';
     MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    ProjectDialogComponent
+  ]
 })
 export class AppModule { }
